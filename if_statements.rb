@@ -43,9 +43,11 @@ end
 
 num_quarters = 0
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
-
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -61,5 +63,12 @@ puts "I don't have enough money for a gumball"
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 1
+cups_of_flour = 3
 has_sauce = true
+
+if cups_of_flour >= 2 && has_sauce == true
+  puts "I can make pizza"
+else
+  puts "I cannot make pizza"
+end
+
