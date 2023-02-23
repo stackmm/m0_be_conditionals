@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+number_students <= 21
 # this should print: true
 
 
@@ -53,21 +60,24 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+# This conditional will evaluate whether or not 4 is less than 9, which it is, therefore it will print "true"
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# This conditional will evaluate whether 4 is less than the integer value held in the variable "books"
+# Since 4 is not less than 3, it will print "false"
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# This conditional will evaluate whether the integer value in "friends" is greater than the value in "siblings"
+# Since 6 is greater than 2, this will print "true"
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# This conditional will evaluate whether the integer value in "attendees" is not equal to "meals"
+# Since 9 is not equal to 8, this will print "true"
 
 
 #-------------------
@@ -90,15 +100,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && age <= 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: It evaluated to true, but thats because I defined puppy as "age <= 1". If you were to define it differently, you would get a different answer
